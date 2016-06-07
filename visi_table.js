@@ -25,8 +25,8 @@ function create_table(rows) {
 }
 
 function color_row(row, data, index) {
-    for(i = 2;i<data.length;i++){
-        if(data[i] == "False"){
+    for(i = 1;i<data.length;i++){
+        if(data[i] == "False" or data[i] == "None"){
             $('td', row).eq(i).addClass('not_visible');
         } else {
             $('td', row).eq(i).addClass('visible');
