@@ -19,7 +19,7 @@ function create_table(rows) {
         data: rows,
         columns: columns,
         order: [[ 0, "asc" ]],
-        iDisplayLength: 150,
+        pageLength: 150,
         createdRow: color_row
     });
 }
