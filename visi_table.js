@@ -18,10 +18,14 @@ function create_table(rows) {
     $("#visi_table").DataTable( {
         data: rows,
         columns: columns,
+        createdRow: color_row,
         order: [[ 0, "asc" ]],
-        "pageLength": 150,
-        "bPaginate": false,
-        createdRow: color_row
+        "orderClasses": false,
+        "paging":false,
+        "scrollX": true,
+        "fixedColumns": true,
+        colReorder: true,
+        fixedHeader: true,
     });
 }
 
