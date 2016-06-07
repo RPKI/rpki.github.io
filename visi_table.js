@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $.ajax({
-            url: "visibility.json",
+            url: "http://rpki.github.io/visibility.json",
             success: create_table
     });
 });
@@ -19,7 +19,8 @@ function create_table(rows) {
         data: rows,
         columns: columns,
         order: [[ 0, "asc" ]],
-        pageLength: 150,
+        "pageLength": 150,
+        "bPaginate": false,
         createdRow: color_row
     });
 }
