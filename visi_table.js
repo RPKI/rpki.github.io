@@ -24,8 +24,7 @@ function create_table(rows) {
         "paging":false,
         "scrollX": true,
         "fixedColumns": true,
-        colReorder: true,
-        fixedHeader: true,
+        fixedHeader: true
     });
 }
 
