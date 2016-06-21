@@ -16,6 +16,7 @@ function create_table(rows) {
     });
 
     $("#visi_table").DataTable( {
+        dom: "Bfrtip",
         data: rows,
         columns: columns,
         createdRow: color_row,
@@ -24,7 +25,8 @@ function create_table(rows) {
         "paging":false,
         "scrollX": true,
         "fixedColumns": true,
-        fixedHeader: true
+        fixedHeader: true,
+        buttons: ['csv']
     });
 }
 
