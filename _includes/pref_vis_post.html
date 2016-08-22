@@ -17,14 +17,15 @@ function createDateAsUTC(date) {
     date.getMinutes(), date.getSeconds()));
     }
 function convert_unix_ts_to_date(unix_ts) {
-  var a = createDateAsUTC(new Date(unix_ts * 1000));
+  var a = new Date(unix_ts * 1000);
+  console.log(unix_ts);
   var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes() < 10 ? '0' + a.getMinutes() : a.getMinutes(); 
-  var sec = a.getSeconds() < 10 ? '0' + a.getSeconds() : a.getSeconds();
+  var year = a.getUTCFullYear();
+  var month = months[a.getUTCMonth()];
+  var date = a.getUTCDate();
+  var hour = a.getUTCHours();
+  var min = a.getUTCMinutes() < 10 ? '0' + a.getUTCMinutes() : a.getUTCMinutes(); 
+  var sec = a.getUTCSeconds() < 10 ? '0' + a.getUTCSeconds() : a.getUTCSeconds();
   var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec  + ' UTC';
   return time;
 }
