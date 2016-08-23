@@ -1,5 +1,8 @@
 
-
+<link href="{{ relative }}css/pref_vis_table.css" rel="stylesheet">
+<div class="checkbox">
+  <label><input id="strange_checkbox" type="checkbox" value="">Only show strange cases</label>
+</div>
 <div id="entry-list">
     <div class="row" style="margin-bottom:10px;">
             <input type="text" class="search form-control" placeholder="Search for ASN" />
@@ -22,15 +25,17 @@
             {% for peer_asn in prefvis.peer_asns %}
                 <tr>
                     <td class="asn">{{ peer_asn.asn }}</td>
-                    <td class="direct_peer">{{ peer_asn.is_direct_peer }}</td>
-                    <td class="rs_peer">{{ peer_asn.is_rs_peer }}</td>
-                    <td class="monitor">{{ peer_asn.is_monitor }}</td>
+                    <td class="direct_peer {{peer_asn.is_direct_peer}}">{{ peer_asn.is_direct_peer }}</td>
+                    <td class="rs_peer {{peer_asn.is_rs_peer}}">{{ peer_asn.is_rs_peer }}</td>
+                    <td class="monitor {{peer_asn.is_monitor}}">{{ peer_asn.is_monitor }}</td>
+                    {% assign counter = 0 %}
                     {% for prefix in prefvis.filtered_prefixes %}
-                    {% if peer_asn.prefixes contains prefix %}
-                    <td class="prefix">true</td>
-                    {% else %}
-                    <td class="prefix">false</td>
-                    {% endif %}
+                        {% if peer_asn.prefixes contains prefix %}
+                        <td class="prefix{{counter}} true">true</td>
+                        {% else %}
+                        <td class="prefix{{counter}} false">false</td>
+                        {% endif %}
+                        {% assign counter = counter | plus: 1 %}
                     {% endfor %}
                 </tr>
             {% endfor %}
@@ -40,8 +45,49 @@
 </div>
 
 <script type="text/javascript">
+var FILTERED_PREFIXES_LEN = {{ prefvis.filtered_prefixes | size}};
+function in_array(item, arr)
+{
+    return (arr.indexOf(item) > -1);
+}
+
+function filter_strange_cases(item) {
+    if ((item.values().direct_peer == "false") && (item.values().rs_peer == "false")) {
+        return false;
+    }
+    if (item.values().monitor == "false") {
+        return false;
+    }
+
+    
+    visible_prefixes = 0;
+    for (i=0;i<FILTERED_PREFIXES_LEN;i++){
+        visibility = eval('item.values().prefix'+i);
+        if (visibility == "true") {
+            visible_prefixes++;
+        }
+    }
+    if (visible_prefixes < FILTERED_PREFIXES_LEN) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var values = ['asn','direct_peer','rs_peer','monitor'];
+for (i=0;i<FILTERED_PREFIXES_LEN;i++) {
+    values.push("prefix" + i);
+}
 var options = {
-  valueNames: ['asn', 'direct_peer', 'rs_peer', 'monitor']
+  valueNames: values
 };
 var entryList = new List('entry-list', options);
+$('#strange_checkbox').change(function () {
+    if ($('#strange_checkbox').is(':checked')) {
+        entryList.filter(filter_strange_cases);
+        $('#strange_checkbox').addClass('checked');
+    } else {
+        $('#strange_checkbox').removeClass('checked');
+        entryList.filter();
+    }
+});
 </script>
