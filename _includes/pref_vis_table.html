@@ -14,10 +14,12 @@
                     <tr>
                         <th style="width:30%;"><span class="sort" data-sort="asn">ASN</span></th>
                         <th style="width:20%;"><span class="sort" data-sort="direct_peer">Direct peer</span></th>
-                        <th style="width:20%;"><span class="sort" data-sort="rs_peer">RS peer</span></th>
+                        <th style="width:20%;"><span class="sort" data-sort="rs_peer">Falcon RS peer</span></th>
                         <th style="width:30%;"><span class="sort" data-sort="monitor">Monitor</span></th>
+                        {% assign counter = 0 %}
                         {% for prefix in prefvis.filtered_prefixes %}
-                        <th style="width:30%;"><span class="sort" data-sort="prefix">{{ prefix }}</span></th>
+                        <th style="width:30%;"><span class="sort" data-sort="prefix{{counter}}">{{ prefix }}</span></th>
+                        {% assign counter = counter | plus: 1 %}
                         {% endfor %}
                     </tr>
                 </thead>
