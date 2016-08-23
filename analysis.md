@@ -33,5 +33,5 @@ The target network does not send our prefixes to the route collector.
 
 #### Case 3.1:
 We announce prefixes via the falcon routeserver. The target network is in the customer cone of a falcon peer. The target network and its
-provider are both monitors. ??????????????????????
+provider are both monitors. **There is a mismatch as to what prefixes customer and provider send to the route collector respectively**.
 ![alt text]({{site.baseurl}}images/case_3_1.png "Logo Title Text 1")
