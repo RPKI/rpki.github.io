@@ -77,6 +77,90 @@
         </table>
     </div>
 </div>
+
+<div>
+<h3>Case 2.1
+   <span id="item_count_label_case_2_1" style="font-size:10px" class="label label-primary">{{ pref_case_2_1 | size }} items in table</span> </h3>
+</div>
+<div id="case_2_1_list">
+    <div class="row" style="margin-bottom:10px;">
+            <input type="text" class="search form-control" placeholder="Search for ASN" />
+    </div>
+    <div class="row">
+        <table class="table table-striped table-condensed">
+            <thead>
+                    <tr>
+                        <th style="width:30%;"><span class="sort" data-sort="customer_asn">Customer ASN</span></th>
+                        <th style="width:30%;"><span class="sort" data-sort="provider_asn">Provider ASN</span></th>
+                        {% assign counter = 0 %}
+                        {% for prefix in prefvis.filtered_prefixes %}
+                        <th style="width:30%;"><span class="sort" data-sort="prefix{{counter}}">{{ prefix }}</span></th>
+                        {% assign counter = counter | plus: 1 %}
+                        {% endfor %}
+                    </tr>
+                </thead>
+            <tbody class="list">
+            {% for peer_asn in pref_case_2_1%}
+                <tr>
+                    <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
+                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign counter = 0 %}
+                    {% for prefix in prefvis.filtered_prefixes %}
+                        {% if peer_asn.prefixes contains prefix %}
+                        <td class="prefix{{counter}} true">true</td>
+                        {% else %}
+                        <td class="prefix{{counter}} false">false</td>
+                        {% endif %}
+                        {% assign counter = counter | plus: 1 %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div>
+<h3>Case 2.2
+   <span id="item_count_label_case_2_2" style="font-size:10px" class="label label-primary">{{ pref_case_2_2 | size }} items in table</span> </h3>
+</div>
+<div id="case_2_2_list">
+    <div class="row" style="margin-bottom:10px;">
+            <input type="text" class="search form-control" placeholder="Search for ASN" />
+    </div>
+    <div class="row">
+        <table class="table table-striped table-condensed">
+            <thead>
+                    <tr>
+                        <th style="width:30%;"><span class="sort" data-sort="customer_asn">Customer ASN</span></th>
+                        <th style="width:30%;"><span class="sort" data-sort="provider_asn">Provider ASN</span></th>
+                        {% assign counter = 0 %}
+                        {% for prefix in prefvis.filtered_prefixes %}
+                        <th style="width:30%;"><span class="sort" data-sort="prefix{{counter}}">{{ prefix }}</span></th>
+                        {% assign counter = counter | plus: 1 %}
+                        {% endfor %}
+                    </tr>
+                </thead>
+            <tbody class="list">
+            {% for peer_asn in pref_case_2_2%}
+                <tr>
+                    <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
+                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign counter = 0 %}
+                    {% for prefix in prefvis.filtered_prefixes %}
+                        {% if peer_asn.prefixes contains prefix %}
+                        <td class="prefix{{counter}} true">true</td>
+                        {% else %}
+                        <td class="prefix{{counter}} false">false</td>
+                        {% endif %}
+                        {% assign counter = counter | plus: 1 %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
 <script type="text/javascript">
 var values = ['asn'];
 for (i=0;i<FILTERED_PREFIXES_LEN;i++) {
@@ -87,5 +171,7 @@ var options = {
 };
 var case_1_1_list = new List('case_1_1_list', options);
 var case_1_2_list = new List('case_1_2_list', options);
+var case_2_1_list = new List('case_2_1_list', options);
+var case_2_2_list = new List('case_2_2_list', options);
 </script>
 
