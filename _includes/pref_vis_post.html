@@ -28,13 +28,17 @@
     </div>
 </div>
 <script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+
 function createDateAsUTC(date) {
     return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(),
     date.getMinutes(), date.getSeconds()));
     }
 function convert_unix_ts_to_date(unix_ts) {
   var a = new Date(unix_ts * 1000);
-  console.log(unix_ts);
   var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   var year = a.getUTCFullYear();
   var month = months[a.getUTCMonth()];

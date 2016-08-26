@@ -21,7 +21,8 @@
             <tbody class="list">
             {% for peer_asn in pref_case_1_1%}
                 <tr>
-                    <td class="asn">{{ peer_asn.asn }}</td>
+                    {% assign asn = peer_asn.asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="asn">{{ peer_asn.asn }}</td>
                     {% assign counter = 0 %}
                     {% for prefix in prefvis.filtered_prefixes %}
                         {% if peer_asn.prefixes contains prefix %}
@@ -61,7 +62,8 @@
             <tbody class="list">
             {% for peer_asn in pref_case_1_2%}
                 <tr>
-                    <td class="asn">{{ peer_asn.asn }}</td>
+                    {% assign asn = peer_asn.asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="asn">{{ peer_asn.asn }}</td>
                     {% assign counter = 0 %}
                     {% for prefix in prefvis.filtered_prefixes %}
                         {% if peer_asn.prefixes contains prefix %}
@@ -103,7 +105,8 @@
             {% for peer_asn in pref_case_2_1%}
                 <tr>
                     <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
-                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign asn = peer_asn.provider_asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="provider_asnasn">{{ peer_asn.provider_asn }}</td>
                     {% assign counter = 0 %}
                     {% for prefix in prefvis.filtered_prefixes %}
                         {% if peer_asn.prefixes contains prefix %}
@@ -145,7 +148,8 @@
             {% for peer_asn in pref_case_2_2%}
                 <tr>
                     <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
-                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign asn = peer_asn.provider_asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="provider_asnasn">{{ peer_asn.provider_asn }}</td>
                     {% assign counter = 0 %}
                     {% for prefix in prefvis.filtered_prefixes %}
                         {% if peer_asn.prefixes contains prefix %}
@@ -187,7 +191,8 @@
             {% for peer_asn in pref_case_3_1%}
                 <tr>
                     <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
-                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign asn = peer_asn.provider_asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="provider_asnasn">{{ peer_asn.provider_asn }}</td>
                     <td class="c_exclusive">{{ peer_asn.c_exclusive }}</td>
                     <td class="p_explusive">{{ peer_asn.p_exclusive }}</td>
                 </tr>
@@ -219,7 +224,8 @@
             {% for peer_asn in pref_case_3_2%}
                 <tr>
                     <td class="customer_asn">{{ peer_asn.customer_asn }}</td>
-                    <td class="provider_asn">{{ peer_asn.provider_asn }}</td>
+                    {% assign asn = peer_asn.provider_asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="provider_asnasn">{{ peer_asn.provider_asn }}</td>
                     <td class="c_exclusive">{{ peer_asn.c_exclusive }}</td>
                     <td class="p_explusive">{{ peer_asn.p_exclusive }}</td>
                 </tr>

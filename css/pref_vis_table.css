@@ -4,3 +4,11 @@ td.true {
 td.false {
     background-color:#FFB3CF;
 }
+.popover-content, .popover-content .body {
+    width: 100%;
+    word-wrap:break-word;
+}
+.popover-content li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
