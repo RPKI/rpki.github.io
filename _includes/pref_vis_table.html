@@ -26,7 +26,8 @@
             <tbody class="list">
             {% for peer_asn in prefvis.peer_asns %}
                 <tr>
-                    <td class="asn">{{ peer_asn.asn }}</td>
+                    {% assign asn = peer_asn.asn %}
+                    <td data-toggle="popover" data-placement="top" data-container="body" data-content="{{ site.data.asn_orgs.[asn] }}" class="asn">{{ peer_asn.asn }}</td>
                     <td class="direct_peer {{peer_asn.is_direct_peer}}">{{ peer_asn.is_direct_peer }}</td>
                     <td class="rs_peer {{peer_asn.is_rs_peer}}">{{ peer_asn.is_rs_peer }}</td>
                     <td class="monitor {{peer_asn.is_monitor}}">{{ peer_asn.is_monitor }}</td>

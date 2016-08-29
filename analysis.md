@@ -5,12 +5,16 @@ permalink: /analysis
 ---
 # Unexpected cases
 
+#### Definitions:
+
+**Target network**: AS that peers either directly with PEERING or with the falcon routeserver, and receives our prefix advertisements.
+
 #### Case 1.1:
 **Announcement via**: Falcon routeserver
 
 **Target network**: is falcon peer, is monitor
 
-**Target network prefix visibility**: None or partial 
+**Prefix visibility**: None or partial 
 
 ![alt text]({{site.baseurl}}images/case_1_1.png "Case 1.1")
 
@@ -19,7 +23,7 @@ permalink: /analysis
 
 **Target network**: is direct peer, is monitor
 
-**Target network prefix visibility**: None or partial 
+**Prefix visibility**: None or partial 
 
 ![alt text]({{site.baseurl}}images/case_1_2.png "Case 1.2")
 
@@ -30,7 +34,7 @@ permalink: /analysis
 
 **Target network**: is monitor, is customer of a falcon peer 
 
-**Target network prefix visibility**: None or partial
+**Prefix visibility**: None or partial
 
 ![alt text]({{site.baseurl}}images/case_2_1.png "Case 2.1")
 
@@ -39,7 +43,7 @@ permalink: /analysis
 
 **Target network**: is monitor, is customer of the direct peer
 
-**Target network prefix visibility**: None or partial
+**Prefix visibility**: None or partial
 
 ![alt text]({{site.baseurl}}images/case_2_2.png "Case 2.2")
 
@@ -50,7 +54,7 @@ permalink: /analysis
 
 **Target networks**: A is falcon peer, B is customer of A, both are monitors, (**??B is not falcon peer??**)
 
-**Target network prefix visibility**: Mismatch in prefix visibility between A and B
+**Prefix visibility**: Mismatch in prefix visibility between A and B
 
 ![alt text]({{site.baseurl}}images/case_3_1.png "Case 3.1")
 
@@ -59,6 +63,6 @@ permalink: /analysis
 
 **Target networks**: A is direct peer, B is customer of A, both are monitors, (**??B is not direct peer??**)
 
-**Target network prefix visibility**: Mismatch in prefix visibility between A and B
+**Prefix visibility**: Mismatch in prefix visibility between A and B
 
 ![alt text]({{site.baseurl}}images/case_3_2.png "Case 3.2")
