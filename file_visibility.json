@@ -1385,11 +1385,11 @@
         "False"
     ],
     [
-        "5118",
+        "1200",
         [
-            "phoenix01"
+            "amsterdam01"
         ],
-        "False",
+        "True",
         "False",
         "False",
         "False",
@@ -1765,7 +1765,7 @@
     [
         "20080",
         [
-            "amsterdam01"
+            "None"
         ],
         "True",
         "False",
@@ -2687,11 +2687,11 @@
         "False"
     ],
     [
-        "1200",
+        "5118",
         [
-            "amsterdam01"
+            "phoenix01"
         ],
-        "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4076,7 +4076,9 @@
     [
         "6939",
         [
-            "amsterdam01"
+            "phoenix01",
+            "amsterdam01",
+            "seattle01"
         ],
         "False",
         "False",
@@ -4118,7 +4120,6 @@
     [
         "24482",
         [
-            "amsterdam01",
             "seattle01"
         ],
         "True",
