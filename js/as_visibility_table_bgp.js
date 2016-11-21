@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $.ajax({
-            url: "http://rpki.github.io/data_visibility.json",
+            url: "http://rpki.github.io/as_visibility_bgp.json",
             success: create_table
     });
 });
