@@ -40,6 +40,7 @@
         "rrc15",
         "rrc16",
         "rrc18",
+        "rrc19",
         "rrc20",
         "rrc21"
     ],
@@ -85,12 +86,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "15169",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -173,12 +176,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "49463",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -261,12 +266,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "39442",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -348,6 +355,7 @@
         "False",
         "False",
         "False",
+        "True",
         "False",
         "False"
     ],
@@ -355,6 +363,7 @@
         "8218",
         "amsterdam01 ",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -437,6 +446,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -481,11 +491,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "34695",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -569,12 +581,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "32338",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -657,12 +671,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "54113",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -745,12 +761,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "6724",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -833,12 +851,14 @@
         "False",
         "False",
         "False",
+        "False",
         "True"
     ],
     [
         "5563",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -921,6 +941,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -963,6 +984,7 @@
         "True",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False"
@@ -1009,11 +1031,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "26",
         "cornell01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1097,12 +1121,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "39309",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -1185,6 +1211,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -1229,12 +1256,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "199837",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -1316,6 +1345,7 @@
         "False",
         "False",
         "False",
+        "False",
         "True",
         "True"
     ],
@@ -1323,6 +1353,7 @@
         "39386",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -1405,11 +1436,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "20485",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1493,12 +1526,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "8473",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -1581,11 +1616,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "5118",
         "phoenix01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1669,11 +1706,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "25369",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1757,11 +1796,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "21478",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1845,11 +1886,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "41692",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -1933,12 +1976,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "2852",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2021,12 +2066,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "49218",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2109,6 +2156,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -2153,11 +2201,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "53698",
         "phoenix01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -2241,6 +2291,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -2285,11 +2336,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "41913",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -2373,12 +2426,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "60357",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2461,11 +2516,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "7342",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -2549,12 +2606,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "13213",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2637,11 +2696,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "5719",
         "sbu01 clemson01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -2725,12 +2786,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "60868",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2813,12 +2876,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "57724",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -2901,6 +2966,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -2944,6 +3010,7 @@
         "False",
         "False",
         "False",
+        "True",
         "False",
         "False"
     ],
@@ -2989,12 +3056,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "12301",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3077,6 +3146,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3121,12 +3191,14 @@
         "True",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "35745",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3209,6 +3281,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3226,6 +3299,7 @@
         "False",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3297,12 +3371,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "12876",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3385,12 +3461,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "61180",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3473,6 +3551,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3511,6 +3590,7 @@
         "False",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -3561,11 +3641,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "156",
         "neu01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -3649,6 +3731,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3693,11 +3776,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "2637",
         "gatech01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -3781,6 +3866,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3824,12 +3910,14 @@
         "False",
         "True",
         "False",
+        "True",
         "False",
         "False"
     ],
     [
         "1200",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -3913,6 +4001,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -3957,11 +4046,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "9498",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -4045,6 +4136,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -4089,11 +4181,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "4651",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -4177,6 +4271,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -4221,12 +4316,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "6898",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4309,6 +4406,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -4353,11 +4451,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "14413",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -4441,11 +4541,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "226",
         "isi01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -4529,6 +4631,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -4555,6 +4658,7 @@
         "False",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4617,12 +4721,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "203959",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4705,12 +4811,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "198435",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4793,12 +4901,14 @@
         "True",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "57043",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -4881,11 +4991,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "20121",
         "ufmg01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -4969,12 +5081,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "18403",
         "amsterdam01 ",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5057,11 +5171,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "6456",
         "seattle01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -5145,12 +5261,14 @@
         "True",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "200023",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5233,6 +5351,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -5262,6 +5381,7 @@
         "False",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5321,11 +5441,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "47764",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -5409,6 +5531,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -5448,6 +5571,7 @@
         "False",
         "True",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5497,12 +5621,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "8282",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5585,11 +5711,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "15133",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -5673,12 +5801,14 @@
         "False",
         "False",
         "False",
+        "False",
         "True"
     ],
     [
         "6866",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5761,6 +5891,7 @@
         "True",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -5805,11 +5936,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "13370",
         "seattle01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -5893,12 +6026,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "39216",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -5981,11 +6116,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "33108",
         "seattle01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -6069,11 +6206,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "6507",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -6157,11 +6296,13 @@
         "False",
         "False",
         "False",
+        "False",
         "True"
     ],
     [
         "5408",
         "grnet01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -6245,12 +6386,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "8764",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -6333,6 +6476,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -6371,6 +6515,7 @@
         "False",
         "False",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -6421,6 +6566,7 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
@@ -6465,11 +6611,13 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "16150",
         "amsterdam01 ",
+        "False",
         "False",
         "False",
         "False",
@@ -6553,12 +6701,14 @@
         "False",
         "False",
         "False",
+        "False",
         "False"
     ],
     [
         "201791",
         "None",
         "True",
+        "False",
         "False",
         "False",
         "False",
@@ -6636,6 +6786,7 @@
         "True",
         "True",
         "True",
+        "False",
         "False",
         "False",
         "False",
