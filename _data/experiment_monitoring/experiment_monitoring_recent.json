@@ -1,0 +1,71 @@
+{
+    "experiments": [
+        {
+            "id": 5,
+            "results": {
+                "rpki": {
+                    "prefix_info": [
+                        {
+                            "missing_roa": [],
+                            "prefix": "192.0.2.0/24",
+                            "extra_roa": []
+                        },
+                        {
+                            "missing_roa": [],
+                            "prefix": "192.0.3.0/24",
+                            "extra_roa": []
+                        },
+                        {
+                            "missing_roa": [],
+                            "prefix": "192.0.4.0/24",
+                            "extra_roa": [
+                                {
+                                    "asn": 4567,
+                                    "max_len": 24
+                                }
+                            ]
+                        },
+                        {
+                            "missing_roa": [
+                                {
+                                    "asn": 1234,
+                                    "max_len": 24
+                                }
+                            ],
+                            "prefix": "192.0.5.0/24",
+                            "extra_roa": []
+                        }
+                    ],
+                    "time": "2017-11-30 17:32:00 UTC",
+                    "errors": true
+                },
+                "bgp": {
+                    "prefix_info": [
+                        {
+                            "extra_route": false,
+                            "prefix": "192.0.2.0/24",
+                            "missing_route": false
+                        },
+                        {
+                            "extra_route": true,
+                            "prefix": "192.0.3.0/24",
+                            "missing_route": false
+                        },
+                        {
+                            "extra_route": false,
+                            "prefix": "192.0.4.0/24",
+                            "missing_route": false
+                        },
+                        {
+                            "extra_route": false,
+                            "prefix": "192.0.5.0/24",
+                            "missing_route": true
+                        }
+                    ],
+                    "time": "2017-11-30 17:32:00 UTC",
+                    "errors": true
+                }
+            }
+        }
+    ]
+}

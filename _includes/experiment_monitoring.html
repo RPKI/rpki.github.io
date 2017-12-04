@@ -1,0 +1,60 @@
+  {% for experiment in monitor_results.experiments %}
+  <div >
+      <h2>Experiment {{ experiment.id }}</h2>
+  </div>
+  <hr>
+  <div class="experiment_monitoring_table_info">
+     <h3>BGP Information</h3>
+  </div>
+  <table class="table table-striped table-condensed">
+      <thead>
+      <tr>
+          <th><span>Prefix</span></th>
+          <th><span>Consistent with Exp Config?</span></th>
+      </tr>
+      </thead>
+      <tbody class="list">
+      {% for prefix_info in experiment.results.bgp.prefix_info %}
+      <tr>
+          <td> {{ prefix_info.prefix }}</td>
+          {% if prefix_info.extra_route == true %}
+          <td>No (Extra Route)</td>
+          {% elsif prefix_info.missing_route == true %}
+          <td>No (Missing Route)</td>
+          {% else %}
+          <td>Yes</td>
+          {% endif %}
+      </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+  <hr>
+  <div class="experiment_monitoring_table_info">
+      <h3>RPKI Information</h3>
+  </div>
+  <table class="table table-striped table-condensed">
+      <thead>
+      <tr>
+          <th><span>Prefix</span></th>
+          <th><span>Consistent with Exp Config</span></th>
+      </tr>
+      </thead>
+      <tbody class="list">
+      {% for prefix_info in experiment.results.rpki.prefix_info %}
+      <tr>
+          <td> {{ prefix_info.prefix }}</td>
+          {% if prefix_info.missing_roa.size == 0 and prefix_info.extra_roa.size == 0 %}
+          <td>Yes</td>
+          {% elsif prefix_info.missing_roa.size != 0 and prefix_info.extra_roa.size !=0 %}
+          <td>No (Missing AND Extra ROAs)</td>
+          {% elsif prefix_info.missing_roa.size != 0 %}
+          <td>No (Missing ROA)</td>
+          {% elsif prefix_info.extra_roa.size != 0 %}
+          <td>No (Extra ROA)</td>
+          {% endif %}
+      </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+  {% endfor %}
+
